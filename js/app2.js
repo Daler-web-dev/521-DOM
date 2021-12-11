@@ -49,6 +49,9 @@ form.onsubmit = (event) => {
         fm.forEach((value, key) => {
             user[key] = value
         })
+        inputs.forEach(input => {
+            input.value = ""
+        })
     }
     
 }
@@ -56,6 +59,7 @@ form.onsubmit = (event) => {
 
 btnShow.onclick = () => {
     showUser(user.name, user.email, user.telephone )
+   
 }
 
 function showUser(name, email, telephone) {
