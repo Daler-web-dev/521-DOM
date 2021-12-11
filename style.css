@@ -1,0 +1,28 @@
+.item {
+    background-color: red;
+    height: 60px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+
+.active {
+    height: 100px !important;
+}
+
+input {
+    outline: none;
+}
+
+.valid {
+    border: 2px solid green;
+}
+.invalid {
+    border: 2px solid red;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s ease;
+}
